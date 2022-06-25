@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:backgroundTint="#000000"
+    tools:context=".Time">
+
+    <Button
+        android:id="@+id/btnSkor2"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="159dp"
+        android:layout_marginEnd="159dp"
+        android:backgroundTint="#FF9800"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/btnchar3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <Button
+        android:id="@+id/btnchar3"
+        android:layout_width="250dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="81dp"
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="#FF9800"
+        android:onClick="btnChar"
+        android:text="Harf Al"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/btnAnsver2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnSkor2" />
+
+    <Button
+        android:id="@+id/btnAnsver2"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="81dp"
+        android:layout_marginBottom="98dp"
+        android:backgroundTint="#FF9800"
+        android:onClick="btnansver"
+        android:text="Tahminde Bulun"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnchar3" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="145dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="122dp"
+        android:layout_marginEnd="122dp"
+        android:gravity="center"
+        android:text="SKORUN"
+        android:textColor="#FF9800"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/btnSkor2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edittextprediction2" />
+
+    <EditText
+        android:id="@+id/edittextprediction2"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="16dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Tahmininizi giriniz"
+        android:inputType="textPersonName"
+        android:textColor="#FF9800"
+        android:textColorHint="#FF9800"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textView4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textAsk2" />
+
+    <TextView
+        android:id="@+id/textQuestion2"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="120dp"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:textColor="#FF9800"
+        android:textSize="20sp"
+        android:textStyle="normal|bold"
+        app:layout_constraintBottom_toTopOf="@+id/textAsk2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textAsk2"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="180dp"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:textColor="#FF9800"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/edittextprediction2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textTime"
+        android:layout_width="94dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="31dp"
+        android:layout_marginEnd="150dp"
+        android:layout_marginBottom="28dp"
+        android:gravity="center"
+        android:text="60"
+        android:textColor="#FF9800"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textQuestion2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
